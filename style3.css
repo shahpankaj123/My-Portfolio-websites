@@ -1,0 +1,137 @@
+
+		.nav{
+			height: 70px;
+			width: 100%;
+	
+			background-color: rgb(0, 102, 102);
+		
+			
+		
+		}
+
+		 .nav ul{
+		 	overflow: auto;
+		 }
+		 .nav ul h3{
+		 	font-size:25px;
+		 	color: white;
+		 }
+
+		
+		li{
+			float: right;
+			display: flex;
+			padding-left: 15px;
+			padding-top: 15px;
+			padding-right: 20px;
+			margin: 5px;
+			
+			
+		}
+		
+		.nav ul li a{
+			display: flex;
+			text-decoration: none;
+			color: white;
+			
+			border-radius: 5px;
+			border-width: 3px;
+			
+		}
+		.nav ul li a:hover{
+			background-color: black;
+			color: white;
+		}
+		.mainbody{
+			background-color: rgb(61, 255, 190);
+			height: 600px;
+			text-align: center;
+			opacity: 0.9;
+			
+		}
+		 .mainbody img{
+			   
+               padding-top: 200px;
+			
+		}
+		.mainbody b{
+			font-size: 65px;
+			
+		}
+		.pic img{
+			padding: 0px;
+		}
+		.port{
+			text-align: center;
+		}
+		.port p{
+			
+			font-size: 50px;
+		}
+		.port .p1 img{
+			padding: 0px 6px;
+		}
+		.port .p2 img{
+			padding: 0px 6px;
+		}
+		.abt{
+			height: 230px;
+			background-color: rgb(61, 255, 190);
+			margin-top: 10px;
+
+		}
+		.abt .a2 p{
+			
+			font-size: 40px;
+			text-align: center;
+			padding-top: 30px;
+
+		}
+		.abt .a2 img{
+			text-align: center;
+		}
+		
+		.abt .a1 p{
+			
+			font-size: 15px;
+           float: left;
+           padding-left: 270px;
+		}
+		.abt .a3 p{
+			
+			font-size: 15px;
+           float: left;
+           padding-left: 350px;
+		}
+		form{
+			margin: 20px;
+			margin-top: 30px;
+			width: 400px;
+			box-shadow: 5px 5px 5px 5px dimgrey;
+			
+		}
+		.foot{
+			background-color: rgb(0, 102, 102);
+			height: 200px;
+		}
+		.foot .f1{
+			float: left;
+			padding-top: 30px;
+			padding-left: 230px;
+		}
+		.foot .f2{
+			float: right;
+			padding-top: 30px;
+			padding-right: 250px;
+		}
+		.foot .f3{
+			float: left;
+			padding-top: 30px;
+			padding-left: 250px;
+		}
+		.foot .f3 a{
+			padding-left: 5px;
+
+		}
+
+		
