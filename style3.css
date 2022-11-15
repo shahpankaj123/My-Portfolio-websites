@@ -8,6 +8,9 @@
 			
 		
 		}
+		html{
+			scroll-behavior: smooth;
+		}
 
 		 .nav ul{
 		 	overflow: auto;
