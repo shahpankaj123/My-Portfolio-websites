@@ -1,4 +1,9 @@
 
+		@media only screen and (max-device-width: 480px) {
+    .desktop {
+    display: none;
+    }       
+}
 		.nav{
 			height: 70px;
 			width: 100%;
