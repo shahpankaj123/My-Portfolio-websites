@@ -141,7 +141,7 @@
 		#d3{
 			font-size: 25px;
 		}
-		@media screen and (max-width:1000px){
+		@media only screen and (max-width:600px){
 			#nave{
 				height: 50px;
 			}
