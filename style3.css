@@ -1,9 +1,4 @@
 
-		@media only screen and (max-device-width: 480px) {
-    .desktop {
-    display: none;
-    }       
-}
 		.nav{
 			height: 70px;
 			width: 100%;
@@ -92,12 +87,8 @@
 			
 			font-size: 40px;
 			text-align: center;
-			padding-top: 30px;
-
 		}
-		.abt .a2 img{
-			text-align: center;
-		}
+		
 		
 		.abt .a1 p{
 			
@@ -141,5 +132,120 @@
 			padding-left: 5px;
 
 		}
+		#d1{
+			font-size: 25px;
+		}
+		#d2{
+			font-size: 25px;
+		}
+		#d3{
+			font-size: 25px;
+		}
+		@media screen and (max-width:1000px){
+			#nave{
+				height: 50px;
+			}
+			#nave ul h3{
+		 	font-size:20px;
+		 	color: white;
+		 	
+		    }
 
-		
+			#nave ul li{
+			float: right;
+			display: flex;
+			padding-left: 5px;
+			padding-top: 9px;
+			padding-right: 10px;
+			margin: 5px;
+            }
+
+			#mb{
+			opacity: 1;
+		    }
+		    #mb img{
+               padding-top: 150px;
+			
+		    }
+		    #mb b{
+			font-size: 45px;
+			}	
+
+			#pc img{
+				padding-top: 0px;
+			}
+			#Portfolio p{
+			
+			font-size: 45px;
+		    }
+		    #Portfolio img{
+		    	height: 90px;
+		    	width: 100px;
+		    }
+		    #About{
+		    	height: 200px;
+
+		    }
+		  
+		    #j2 p{
+		    	font-size: 45px;
+			    text-align: center;
+			    padding-top: 10px;
+			   }
+			 #j1 p{
+		    	font-size: 15px;
+                float: left;
+                padding-left: 10px;
+			   }  
+			 #j3 p{
+		    	font-size: 15px;
+                padding-left: 10px;
+			   }
+			   #ft p{
+		    	font-size: 15px;
+
+
+		    }
+		    #ft{
+		    	height: 160px;
+		    }
+		    
+
+			#k1{
+			border-right:1px solid black ;
+			float: left;
+			padding-top: 20px;
+			padding-left: 2px;
+			height: 130px;
+		    }
+		    #k2{
+		    border-left:1px solid black ;
+			float: right;
+			padding-top: 20px;
+			padding-right: 5px;
+			height: 130px;
+		    }
+		    #k3{
+		    
+			float: left;
+			padding-top: 20px;
+			padding-left: 0px;
+			
+		    }
+		    #k3 img{
+		    	height: 15px;
+		    	width: 15px;
+
+			   }
+			  #d1{
+			  	font-size: 20px;
+			  }
+			  #d2{
+			   font-size: 20px;
+		       }
+		      #d2{
+			  font-size: 20px;
+		    }
+		 }
+
+					
