@@ -102,14 +102,22 @@
            float: left;
            padding-left: 350px;
 		}
+		#Contact p{
+			font-size: 40px;
+			text-align: center;
+		}
+		#Contact{
+			padding-bottom: 15px;
+		}
 		form{
-			margin: 20px;
-			margin-top: 30px;
+			margin: auto;
+			
 			width: 400px;
 			box-shadow: 5px 5px 5px 5px dimgrey;
 			
 		}
 		.foot{
+
 			background-color: rgb(0, 102, 102);
 			height: 200px;
 		}

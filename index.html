@@ -25,9 +25,10 @@
 		<img src="7.webp" height="40px" width="200px"></div>
 		<p>IT Student of Nepal</p>
 	</section>
-	<section id="Portfolio" class="port">
-		<p><b>Portfolio</b></p>
-		<div class="p1" >
+
+	<section id="Portfolio" class="port" onmouseenter="use()" onmouseleave="unused()">
+		<p><b>Portfolio</b></p>)"
+		<div class="p1" id="i1">
 		<img src="1.jpg" height="230px" width="230px">
 		<img src="2.jpg" height="230px" width="230px">
 		<img src="3.jpg" height="230px" width="230px">
@@ -38,8 +39,9 @@
 		<img src="8.jpg" height="230px" width="230px">
 	</div>
 	</section>
+
 	<section id="About" class="abt">
-		<div class="a2" id="j2">
+		<div class="a2" id="j2" onmouseenter="about()" onmouseleave="about1()">
 		<p><b>About</b></p>
           </div>
 		<div class="a1" id="j1">
@@ -50,8 +52,9 @@
 	</div>
 
 	</section>
-	<section id="Contact">
+	<section id="Contact" onmouseenter="con()" onmouseleave="con1()">
 		
+		<p><b>Contact</b></p>
 		<form>
 		<fieldset>
 			
@@ -110,4 +113,33 @@
 	</footer>
 	
 </body>
+<script type="text/javascript">
+	function sender() {
+		alert("Information Recorded Sucessfull!!!");
+	}
+	function use(){
+
+		document.getElementById("Portfolio").style.color="blue";
+	}
+	function unused(){
+
+		document.getElementById("Portfolio").style.color="green";
+	}
+	function about(){
+
+		document.getElementById("j2").style.color="red";
+	}
+	function about1(){
+
+		document.getElementById("j2").style.color="blue";
+	}
+	function con(){
+
+		document.getElementById("Contact").style.color="blue";
+	}
+	function con1(){
+
+		document.getElementById("Contact").style.color="green";
+	}
+</script>
 </html>
