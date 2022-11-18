@@ -17,6 +17,9 @@
 			padding-right: 5px;
 			margin: 5px;
             }
+            form{
+            	width:300px;
+            }
 
 			#mb{
 			opacity: 1;
@@ -86,13 +89,15 @@
 			
 		    }
 		    #k3{
-			padding-top: 10px;
+			padding-top: 130px;
 			padding-left: 35px;
 			
 		    }
 		    #k3 img{
-		    	height: 10px;
-		    	width: 10px;
+		    	padding-left: 5px;
+		    	padding-bottom: 10px;
+		    	height: 20px;
+		    	width: 20px;
 
 			   }
 			   #d1{
@@ -104,6 +109,6 @@
 			  	color: blue;
 		       }
 		      #d3{
-			   	font-size: 15px;
+			   	font-size: 25px;
 			  	color: black;
 		    }
