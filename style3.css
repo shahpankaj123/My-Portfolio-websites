@@ -77,8 +77,16 @@
 		.port .p1 img{
 			padding: 0px 6px;
 		}
+		.port .p1 img:hover{
+			box-shadow: 5px 5px 5px 5px dimgrey;
+			border: 2px solid white;
+		}
 		.port .p2 img{
 			padding: 0px 6px;
+		}
+		.port .p2 img:hover{
+			box-shadow: 5px 5px 5px 5px dimgrey;
+			border: 2px solid white;
 		}
 		.abt{
 			height: 230px;
