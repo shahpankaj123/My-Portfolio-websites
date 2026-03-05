@@ -1101,6 +1101,133 @@ section {
     background: rgba(99, 102, 241, 0.1);
 }
 
+/* Achievements Section */
+.achievements {
+    padding: 100px 0;
+    background: var(--bg-primary);
+}
+
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.achievement-card {
+    background: var(--bg-secondary);
+    border-radius: 16px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: var(--transition);
+    position: relative;
+}
+
+.achievement-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.achievement-image {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.achievement-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.achievement-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.achievement-card:hover .achievement-overlay {
+    opacity: 1;
+}
+
+.achievement-overlay i {
+    color: white;
+    font-size: 24px;
+}
+
+.achievement-content {
+    padding: 25px;
+}
+
+.achievement-content h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+}
+
+.achievement-content p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Lightbox Modal */
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 10000;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+.lightbox-content {
+    position: relative;
+    max-width: 95%;
+    max-height: 90%;
+}
+
+.lightbox-content img {
+    max-width: 70%;
+    max-height: 70%;
+    object-fit: contain;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+    transition: var(--transition);
+}
+
+.lightbox-close:hover {
+    color: var(--primary-color);
+}
+
 /* Contact Section */
 .contact {
     background: var(--bg-secondary);
