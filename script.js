@@ -238,60 +238,60 @@ $(document).ready(function () {
   revealOnScroll(); // Initial check
 
   // =============== CONTACT FORM ===============
-  $("#contactForm").on("submit", function (e) {
-    e.preventDefault();
+  // $("#contactForm").on("submit", function (e) {
+  //   e.preventDefault();
 
-    const name = $("#name").val();
-    const email = $("#email").val();
-    const subject = $("#subject").val();
-    const message = $("#message").val();
+  //   const name = $("#name").val();
+  //   const email = $("#email").val();
+  //   const subject = $("#subject").val();
+  //   const message = $("#message").val();
 
-    // Show loading state
-    const submitBtn = $(this).find(".submit-btn");
-    const originalHTML = submitBtn.html();
-    submitBtn.html(
-      '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>',
-    );
-    submitBtn.prop("disabled", true);
+  //   // Show loading state
+  //   const submitBtn = $(this).find(".submit-btn");
+  //   const originalHTML = submitBtn.html();
+  //   submitBtn.html(
+  //     '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>',
+  //   );
+  //   submitBtn.prop("disabled", true);
 
-    // Simulate form submission (replace with actual form submission)
-    setTimeout(function () {
-      // Success message
-      alert("Message sent successfully! I will get back to you soon.");
+  //   // Simulate form submission (replace with actual form submission)
+  //   setTimeout(function () {
+  //     // Success message
+  //     alert("Message sent successfully! I will get back to you soon.");
 
-      // Reset form
-      $("#contactForm")[0].reset();
+  //     // Reset form
+  //     $("#contactForm")[0].reset();
 
-      // Reset button
-      submitBtn.html(originalHTML);
-      submitBtn.prop("disabled", false);
+  //     // Reset button
+  //     submitBtn.html(originalHTML);
+  //     submitBtn.prop("disabled", false);
 
-      // In production, replace with actual AJAX call:
-      /*
-            $.ajax({
-                url: 'your-backend-endpoint.php',
-                method: 'POST',
-                data: {
-                    name: name,
-                    email: email,
-                    subject: subject,
-                    message: message
-                },
-                success: function(response) {
-                    alert('Message sent successfully!');
-                    $('#contactForm')[0].reset();
-                },
-                error: function() {
-                    alert('Failed to send message. Please try again.');
-                },
-                complete: function() {
-                    submitBtn.html(originalHTML);
-                    submitBtn.prop('disabled', false);
-                }
-            });
-            */
-    }, 2000);
-  });
+  //     // In production, replace with actual AJAX call:
+  //     /*
+  //           $.ajax({
+  //               url: 'your-backend-endpoint.php',
+  //               method: 'POST',
+  //               data: {
+  //                   name: name,
+  //                   email: email,
+  //                   subject: subject,
+  //                   message: message
+  //               },
+  //               success: function(response) {
+  //                   alert('Message sent successfully!');
+  //                   $('#contactForm')[0].reset();
+  //               },
+  //               error: function() {
+  //                   alert('Failed to send message. Please try again.');
+  //               },
+  //               complete: function() {
+  //                   submitBtn.html(originalHTML);
+  //                   submitBtn.prop('disabled', false);
+  //               }
+  //           });
+  //           */
+  //   }, 2000);
+  // });
 
   // =============== BACK TO TOP BUTTON ===============
   const backToTop = $("#backToTop");
