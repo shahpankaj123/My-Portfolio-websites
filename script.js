@@ -237,61 +237,200 @@ $(document).ready(function () {
   $(window).on("scroll", revealOnScroll);
   revealOnScroll(); // Initial check
 
-  // =============== CONTACT FORM ===============
-  // $("#contactForm").on("submit", function (e) {
-  //   e.preventDefault();
+  // =============== NOTIFICATION FUNCTION ===============
+  function showNotification(message, type = "info") {
+    // Create notification element
+    const notification = $(`
+      <div class="notification notification-${type}">
+        <div class="notification-content">
+          <i class="fas fa-${
+            type === "success"
+              ? "check-circle"
+              : type === "error"
+                ? "exclamation-circle"
+                : "info-circle"
+          }"></i>
+          <span>${message}</span>
+        </div>
+        <button class="notification-close">&times;</button>
+      </div>
+    `);
 
-  //   const name = $("#name").val();
-  //   const email = $("#email").val();
-  //   const subject = $("#subject").val();
-  //   const message = $("#message").val();
+    // Add styles if not already present
+    if (!$("#notification-styles").length) {
+      $("<style>")
+        .attr("id", "notification-styles")
+        .text(
+          `
+            .notification {
+              position: fixed;
+              top: 20px;
+              right: 20px;
+              padding: 16px 20px;
+              border-radius: 8px;
+              box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 16px;
+              animation: slideIn 0.3s ease-out;
+              z-index: 10000;
+              max-width: 400px;
+            }
 
-  //   // Show loading state
-  //   const submitBtn = $(this).find(".submit-btn");
-  //   const originalHTML = submitBtn.html();
-  //   submitBtn.html(
-  //     '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>',
-  //   );
-  //   submitBtn.prop("disabled", true);
+            @keyframes slideIn {
+              from {
+                transform: translateX(400px);
+                opacity: 0;
+              }
+              to {
+                transform: translateX(0);
+                opacity: 1;
+              }
+            }
 
-  //   // Simulate form submission (replace with actual form submission)
-  //   setTimeout(function () {
-  //     // Success message
-  //     alert("Message sent successfully! I will get back to you soon.");
+            @keyframes slideOut {
+              from {
+                transform: translateX(0);
+                opacity: 1;
+              }
+              to {
+                transform: translateX(400px);
+                opacity: 0;
+              }
+            }
 
-  //     // Reset form
-  //     $("#contactForm")[0].reset();
+            .notification.removing {
+              animation: slideOut 0.3s ease-out;
+            }
 
-  //     // Reset button
-  //     submitBtn.html(originalHTML);
-  //     submitBtn.prop("disabled", false);
+            .notification-success {
+              background-color: #d4edda;
+              color: #155724;
+              border: 1px solid #c3e6cb;
+            }
 
-  //     // In production, replace with actual AJAX call:
-  //     /*
-  //           $.ajax({
-  //               url: 'your-backend-endpoint.php',
-  //               method: 'POST',
-  //               data: {
-  //                   name: name,
-  //                   email: email,
-  //                   subject: subject,
-  //                   message: message
-  //               },
-  //               success: function(response) {
-  //                   alert('Message sent successfully!');
-  //                   $('#contactForm')[0].reset();
-  //               },
-  //               error: function() {
-  //                   alert('Failed to send message. Please try again.');
-  //               },
-  //               complete: function() {
-  //                   submitBtn.html(originalHTML);
-  //                   submitBtn.prop('disabled', false);
-  //               }
-  //           });
-  //           */
-  //   }, 2000);
-  // });
+            .notification-error {
+              background-color: #f8d7da;
+              color: #721c24;
+              border: 1px solid #f5c6cb;
+            }
+
+            .notification-info {
+              background-color: #d1ecf1;
+              color: #0c5460;
+              border: 1px solid #bee5eb;
+            }
+
+            .notification-content {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              flex: 1;
+            }
+
+            .notification-content i {
+              font-size: 20px;
+            }
+
+            .notification-close {
+              background: none;
+              border: none;
+              font-size: 20px;
+              cursor: pointer;
+              color: inherit;
+              padding: 0;
+              display: flex;
+              align-items: center;
+            }
+
+            .notification-close:hover {
+              opacity: 0.7;
+            }
+
+            @media (max-width: 768px) {
+              .notification {
+                right: 10px;
+                left: 10px;
+                max-width: none;
+              }
+            }
+          `,
+        )
+        .appendTo("head");
+    }
+
+    // Add notification to DOM
+    $("body").append(notification);
+
+    // Close button functionality
+    notification.find(".notification-close").on("click", function () {
+      notification.addClass("removing");
+      setTimeout(() => notification.remove(), 300);
+    });
+
+    // Auto-remove after 5 seconds
+    setTimeout(() => {
+      if (notification.parent().length) {
+        notification.addClass("removing");
+        setTimeout(() => notification.remove(), 300);
+      }
+    }, 5000);
+  }
+
+  // =============== CONTACT FORM WITH WEB3FORMS ===============
+  $("#contactForm").on("submit", function (e) {
+    e.preventDefault();
+
+    const form = this;
+    const submitBtn = $(this).find(".submit-btn");
+    const originalHTML = submitBtn.html();
+
+    // Show loading state
+    submitBtn.html(
+      '<span>Sending...</span><i class="fas fa-spinner fa-spin"></i>',
+    );
+    submitBtn.prop("disabled", true);
+
+    // Create FormData object from the form
+    const formData = new FormData(form);
+
+    // Submit to Web3Forms
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success) {
+          // Show success message
+          showNotification(
+            "Message sent successfully! I will get back to you soon.",
+            "success",
+          );
+
+          // Reset form
+          form.reset();
+        } else {
+          showNotification(
+            "Failed to send message. Please try again.",
+            "error",
+          );
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        showNotification(
+          "An error occurred. Please try again later.",
+          "error",
+        );
+      })
+      .finally(() => {
+        // Reset button
+        submitBtn.html(originalHTML);
+        submitBtn.prop("disabled", false);
+      });
+  });
 
   // =============== BACK TO TOP BUTTON ===============
   const backToTop = $("#backToTop");
@@ -355,7 +494,7 @@ $(document).ready(function () {
   window.copyEmail = function () {
     const email = "pshah9360@gmail.com";
     navigator.clipboard.writeText(email).then(function () {
-      alert("Email copied to clipboard!");
+      showNotification("Email copied to clipboard!", "success");
     });
   };
 
