@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pankaj Shah - Python/Java AI FullStack Engineer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
-    
+
     <!-- Cursor Effect -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
@@ -32,6 +32,10 @@
                 <li><a href="#achievements" class="nav-link">Achievements & Certificates</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark theme"
+                title="Switch theme">
+                <i class="fas fa-moon" aria-hidden="true"></i>
+            </button>
             <div class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -47,7 +51,7 @@
             <div class="gradient-orb orb-1"></div>
             <div class="gradient-orb orb-2"></div>
         </div>
-        
+
         <div class="hero-content">
             <div class="hero-text">
                 <div class="greeting">Hi there, I'm</div>
@@ -58,9 +62,11 @@
                     <span class="typing-text"></span>
                     <span class="cursor-blink">|</span>
                 </div>
+                <div class="hero-status"><span class="status-dot"></span> Building resilient systems at Avarthan
+                    Innovations</div>
                 <p class="hero-description">
-                    A passionate Python/Java Full-Stack Engineer specializing in building scalable web applications 
-                    with Django, Spring Boot, and AI-powered solutions. Currently crafting innovative solutions at 
+                    A passionate Python/Java Full-Stack Engineer specializing in building scalable web applications
+                    with Django, Spring Boot, and AI-powered solutions. Currently crafting innovative solutions at
                     <span class="highlight">Avarthan Innovations</span>.
                 </p>
                 <div class="hero-buttons">
@@ -96,7 +102,8 @@
                         <div class="tech-ring ring-2"></div>
                         <div class="tech-ring ring-3"></div>
                         <div class="profile-inner">
-                            <i class="fas fa-code profile-icon"></i>
+                            <img class="profile-photo" src="media/Pankaj_shah_cover_photo.jpg"
+                                alt="Portrait of Pankaj Shah">
                         </div>
                     </div>
                 </div>
@@ -120,7 +127,7 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="scroll-indicator">
             <div class="mouse">
                 <div class="wheel"></div>
@@ -137,27 +144,32 @@
                 <h2 class="section-title">About Me</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="about-content">
                 <div class="about-text">
                     <p class="about-intro">
-                        I am a dedicated and results-driven <span class="text-highlight">Python and Java backend developer</span> 
-                        with a strong foundation in building scalable and efficient systems. At 22, I have gained substantial 
+                        I am a dedicated and results-driven <span class="text-highlight">Python and Java backend
+                            developer</span>
+                        with a strong foundation in building scalable and efficient systems. At 22, I have gained
+                        substantial
                         industry experience through both internship and professional roles.
                     </p>
                     <p>
-                        I began my journey at <strong>NyxusByte Tech</strong> as a Django Python Developer (Nov 2023 – Feb 2024), 
-                        where I was recognized as <span class="badge-inline">Intern of the Month</span> for my outstanding 
+                        I began my journey at <strong>NyxusByte Tech</strong> as a Django Python Developer (Nov 2023 –
+                        Feb 2024),
+                        where I was recognized as <span class="badge-inline">Intern of the Month</span> for my
+                        outstanding
                         performance and technical contributions.
                     </p>
                     <p>
-                        In March 2024, I joined <strong>Avarthan Innovations</strong> as a Backend Developer, where I continue 
+                        In March 2024, I joined <strong>Avarthan Innovations</strong> as a Backend Developer, where I
+                        continue
                         to deepen my expertise in Python, Java, Django, Spring Boot, and Artificial Intelligence.
                     </p>
-                    
+
                     <div class="stats-grid">
                         <div class="stat-card">
-                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-number" data-target="3">0</div>
                             <div class="stat-label">Years Experience</div>
                         </div>
                         <div class="stat-card">
@@ -174,7 +186,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="about-visual">
                     <div class="education-card">
                         <div class="edu-icon">
@@ -206,7 +218,7 @@
                 <h2 class="section-title">Experience</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="timeline">
                 <div class="timeline-item" data-aos="fade-up">
                     <div class="timeline-dot"></div>
@@ -222,10 +234,34 @@
                                 INDIA - REMOTE
                             </div>
                             <p class="exp-description">
-                                Working as a Python/Java Full Stack Engineer, primarily involved in designing and 
-                                developing scalable web applications using Spring Boot, Django (Microservices Architecture) 
+                                Working as a Python/Java Full Stack Engineer, primarily involved in designing and
+                                developing scalable web applications using Spring Boot, Django (Microservices
+                                Architecture)
                                 on the backend and React on the frontend.
                             </p>
+                            <div class="work-project">
+                                <div class="work-project-heading">
+                                    <span class="work-project-label">Featured platform</span>
+                                    <h4>CampusDesk</h4>
+                                </div>
+                                <p>
+                                    Building the Catholic Board of Education's Java 21 and Spring Boot school operations
+                                    platform, used by more than 50 schools through one connected system. The platform
+                                    brings together identity, school administration, fees, reporting, transport, exams,
+                                    attendance, homework, staff leave, and library workflows through independent
+                                    services.
+                                </p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Spring Cloud</span>
+                                    <span class="tech-tag">Kafka</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                    <span class="tech-tag">Eureka</span>
+                                    <span class="tech-tag">OAuth2</span>
+                                    <span class="tech-tag">OpenFeign</span>
+                                    <span class="tech-tag">Maven</span>
+                                </div>
+                            </div>
                             <div class="tech-tags">
                                 <span class="tech-tag">Spring Boot</span>
                                 <span class="tech-tag">Django</span>
@@ -252,8 +288,10 @@
                                 Biratnagar, Nepal
                             </div>
                             <p class="exp-description">
-                                Assistant Lecturer for ISA (Information Systems Architecture) , OOP and Full-Stack Development modules. 
-                                Responsible for guiding students through core concepts and conducting practical sessions.
+                                Assistant Lecturer for ISA (Information Systems Architecture) , OOP and Full-Stack
+                                Development modules.
+                                Responsible for guiding students through core concepts and conducting practical
+                                sessions.
                             </p>
                             <div class="tech-tags">
                                 <span class="tech-tag">Teaching</span>
@@ -278,7 +316,7 @@
                                 Kathmandu, Nepal
                             </div>
                             <p class="exp-description">
-                                Developed the entire backend of an e-commerce website using Django, including APIs for 
+                                Developed the entire backend of an e-commerce website using Django, including APIs for
                                 product management, user authentication, and order handling.
                             </p>
                             <div class="tech-tags">
@@ -309,7 +347,8 @@
                                 Itharee, Nepal
                             </div>
                             <p class="exp-description">
-                                Collaborated with experienced developers to build and improve web applications using Django. 
+                                Collaborated with experienced developers to build and improve web applications using
+                                Django.
                                 Contributed to feature implementation, debugging, and performance optimization.
                             </p>
                             <div class="tech-tags">
@@ -332,15 +371,15 @@
                 <h2 class="section-title">Featured Projects</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="projects-grid">
                 <div class="project-card featured" data-aos="fade-up">
                     <div class="project-number">01</div>
                     <div class="project-content">
                         <h3 class="project-title">Unified Sports Booking & Smart Media System</h3>
                         <p class="project-description">
-                            Django-based platform combining sports venue booking management with personalized news 
-                            recommendation. Features user authentication, venue management, booking tracking, payment 
+                            Django-based platform combining sports venue booking management with personalized news
+                            recommendation. Features user authentication, venue management, booking tracking, payment
                             logging, OTP verification, and AI-powered news recommendations.
                         </p>
                         <div class="project-tech">
@@ -351,8 +390,8 @@
                             <span class="project-tag">Payment Integration</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/shahpankaj123/Unified-Sports-Booking-Smart-News-Media-System-Backend" 
-                               target="_blank" class="project-link">
+                            <a href="https://github.com/shahpankaj123/Unified-Sports-Booking-Smart-News-Media-System-Backend"
+                                target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                                 <span>View Code</span>
                             </a>
@@ -360,12 +399,37 @@
                     </div>
                 </div>
 
-                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-card campusdesk-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-number">02</div>
+                    <div class="project-content">
+                        <h3 class="project-title">CampusDesk School Operations Platform</h3>
+                        <p class="project-description">
+                            A Java 21 and Spring Boot microservice ecosystem built for the Catholic Board of Education,
+                            connecting more than 50 schools through one system for authentication, administration,
+                            student and staff workflows, fee management, reporting, transport, exams, attendance,
+                            homework, leave, and library operations.
+                        </p>
+                        <div class="project-tech">
+                            <span class="project-tag">Java 21</span>
+                            <span class="project-tag">Spring Cloud</span>
+                            <span class="project-tag">Kafka</span>
+                            <span class="project-tag">PostgreSQL</span>
+                            <span class="project-tag">Eureka</span>
+                            <span class="project-tag">Redis</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link"><i class="fas fa-diagram-project"></i><span>Event-driven
+                                    architecture</span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-number">03</div>
                     <div class="project-content">
                         <h3 class="project-title">Personalized News Recommendation System</h3>
                         <p class="project-description">
-                            Django REST Framework backend providing APIs for managing users, articles, preferences, 
+                            Django REST Framework backend providing APIs for managing users, articles, preferences,
                             and AI-powered recommendations for personalized content delivery.
                         </p>
                         <div class="project-tech">
@@ -374,8 +438,8 @@
                             <span class="project-tag">Recommendation Engine</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/shahpankaj123/Personalized-News-Recommendation-System-Backend" 
-                               target="_blank" class="project-link">
+                            <a href="https://github.com/shahpankaj123/Personalized-News-Recommendation-System-Backend"
+                                target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                                 <span>View Code</span>
                             </a>
@@ -384,11 +448,11 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-number">03</div>
+                    <div class="project-number">04</div>
                     <div class="project-content">
                         <h3 class="project-title">LangChain HR Hiring System</h3>
                         <p class="project-description">
-                            AI-powered HR hiring system using LangChain and LangGraph for evaluating candidates based 
+                            AI-powered HR hiring system using LangChain and LangGraph for evaluating candidates based
                             on skills and experience, with structured workflow for filtering and ranking.
                         </p>
                         <div class="project-tech">
@@ -398,8 +462,8 @@
                             <span class="project-tag">AI Orchestration</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/shahpankaj123/Langchain-and-Langgraph" 
-                               target="_blank" class="project-link">
+                            <a href="https://github.com/shahpankaj123/Langchain-and-Langgraph" target="_blank"
+                                class="project-link">
                                 <i class="fab fa-github"></i>
                                 <span>View Code</span>
                             </a>
@@ -408,11 +472,11 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up">
-                    <div class="project-number">04</div>
+                    <div class="project-number">05</div>
                     <div class="project-content">
                         <h3 class="project-title">Spring Boot Microservices Project</h3>
                         <p class="project-description">
-                            Microservices architecture with UserService and ContactService communicating through 
+                            Microservices architecture with UserService and ContactService communicating through
                             Eureka Server, with API Gateway for routing external requests.
                         </p>
                         <div class="project-tech">
@@ -422,8 +486,8 @@
                             <span class="project-tag">API Gateway</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/shahpankaj123/Spring-Boot-Microservices-Project" 
-                               target="_blank" class="project-link">
+                            <a href="https://github.com/shahpankaj123/Spring-Boot-Microservices-Project" target="_blank"
+                                class="project-link">
                                 <i class="fab fa-github"></i>
                                 <span>View Code</span>
                             </a>
@@ -432,11 +496,11 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="project-number">05</div>
+                    <div class="project-number">06</div>
                     <div class="project-content">
                         <h3 class="project-title">Kafka Real-Time Streaming</h3>
                         <p class="project-description">
-                            Spring Boot application fetching live data from Wikimedia API, producing to Kafka, 
+                            Spring Boot application fetching live data from Wikimedia API, producing to Kafka,
                             and consuming for database storage. Real-time data streaming integration.
                         </p>
                         <div class="project-tech">
@@ -446,8 +510,8 @@
                             <span class="project-tag">Wikimedia API</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/shahpankaj123/spring-boot-kafka-wikimedia-project" 
-                               target="_blank" class="project-link">
+                            <a href="https://github.com/shahpankaj123/spring-boot-kafka-wikimedia-project"
+                                target="_blank" class="project-link">
                                 <i class="fab fa-github"></i>
                                 <span>View Code</span>
                             </a>
@@ -456,11 +520,11 @@
                 </div>
 
                 <div class="project-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="project-number">06</div>
+                    <div class="project-number">07</div>
                     <div class="project-content">
                         <h3 class="project-title">Travel Management System</h3>
                         <p class="project-description">
-                            Comprehensive travel management solution built with Django, Celery, and Redis for 
+                            Comprehensive travel management solution built with Django, Celery, and Redis for
                             managing organizational travel activities.
                         </p>
                         <div class="project-tech">
@@ -469,8 +533,8 @@
                             <span class="project-tag">Redis</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/shahpankaj123/Travel-Management-System" 
-                               target="_blank" class="project-link">
+                            <a href="https://github.com/shahpankaj123/Travel-Management-System" target="_blank"
+                                class="project-link">
                                 <i class="fab fa-github"></i>
                                 <span>View Code</span>
                             </a>
@@ -489,7 +553,7 @@
                 <h2 class="section-title">Skills & Technologies</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="skills-content">
                 <div class="skill-category" data-aos="fade-up">
                     <div class="category-header">
@@ -639,7 +703,7 @@
                 <h2 class="section-title">Achievements & Certificates</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="achievements-grid">
                 <div class="achievement-card" data-aos="fade-up">
                     <div class="achievement-image">
@@ -656,7 +720,8 @@
 
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="achievement-image">
-                        <img src="media/class_topper_college_recognition.jpeg" alt="Class Topper College Recognition" loading="lazy">
+                        <img src="media/class_topper_college_recognition.jpeg" alt="Class Topper College Recognition"
+                            loading="lazy">
                         <div class="achievement-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -669,7 +734,8 @@
 
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="achievement-image">
-                        <img src="media/college_dean_list_recognization.jpeg" alt="College Dean List Recognition" loading="lazy">
+                        <img src="media/college_dean_list_recognization.jpeg" alt="College Dean List Recognition"
+                            loading="lazy">
                         <div class="achievement-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -695,7 +761,8 @@
 
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
                     <div class="achievement-image">
-                        <img src="media/Intern of the month Certificate.png" alt="Intern of the Month Certificate" loading="lazy">
+                        <img src="media/Intern of the month Certificate.png" alt="Intern of the Month Certificate"
+                            loading="lazy">
                         <div class="achievement-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -708,7 +775,8 @@
 
                 <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
                     <div class="achievement-image">
-                        <img src="media/6_semester_top_certificate.jpeg" alt="6th Semester Top Certificate" loading="lazy">
+                        <img src="media/6_semester_top_certificate.jpeg" alt="6th Semester Top Certificate"
+                            loading="lazy">
                         <div class="achievement-overlay">
                             <i class="fas fa-search-plus"></i>
                         </div>
@@ -743,20 +811,21 @@
                 <h2 class="section-title">Download Resume/CV</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="cv-download-content">
                 <div class="cv-card" data-aos="fade-up">
                     <div class="cv-icon">
                         <i class="fas fa-file-pdf"></i>
                     </div>
                     <h3>Complete CV / Resume</h3>
-                    <p>Download my comprehensive CV featuring my professional experience, education, skills, and projects.</p>
+                    <p>Download my comprehensive CV featuring my professional experience, education, skills, and
+                        projects.</p>
                     <a href="pankaj_shah_2026_cv.pdf" download class="btn btn-primary">
                         <span>Download CV</span>
                         <i class="fas fa-download"></i>
                     </a>
                 </div>
-                
+
             </div>
         </div>
     </section>
@@ -769,15 +838,15 @@
                 <h2 class="section-title">Get In Touch</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="contact-content">
                 <div class="contact-info">
                     <h3>Let's Work Together!</h3>
                     <p>
-                        I'm currently open to new opportunities and exciting projects. Whether you have a question 
+                        I'm currently open to new opportunities and exciting projects. Whether you have a question
                         or just want to say hi, feel free to reach out!
                     </p>
-                    
+
                     <div class="contact-details">
                         <div class="contact-item">
                             <div class="contact-icon">
@@ -788,7 +857,7 @@
                                 <a href="mailto:pshah9360@gmail.com">pshah9360@gmail.com</a>
                             </div>
                         </div>
-                        
+
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-phone"></i>
@@ -798,7 +867,7 @@
                                 <a href="tel:+9779804016025">+977 9804016025</a>
                             </div>
                         </div>
-                        
+
                         <div class="contact-item">
                             <div class="contact-icon">
                                 <i class="fas fa-map-marker-alt"></i>
@@ -809,12 +878,13 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="social-links-large">
                         <a href="https://github.com/shahpankaj123" target="_blank" class="social-link-large">
                             <i class="fab fa-github"></i>
                         </a>
-                        <a href="https://www.linkedin.com/in/pankaj-shah-901a98219/" target="_blank" class="social-link-large">
+                        <a href="https://www.linkedin.com/in/pankaj-shah-901a98219/" target="_blank"
+                            class="social-link-large">
                             <i class="fab fa-linkedin"></i>
                         </a>
                         <a href="https://www.pankajshah12.com.np" target="_blank" class="social-link-large">
@@ -822,7 +892,7 @@
                         </a>
                     </div>
                 </div>
-                
+
                 <div class="contact-form-wrapper">
                     <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form">
                         <input type="hidden" name="access_key" value="130874a9-96ee-4de9-9758-2ae0cfa63c8a">
@@ -830,22 +900,22 @@
                             <input type="text" id="name" name="name" required>
                             <label for="name">Your Name</label>
                         </div>
-                        
+
                         <div class="form-group">
                             <input type="email" id="email" name="email" required>
                             <label for="email">Your Email</label>
                         </div>
-                        
+
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" required>
                             <label for="subject">Subject</label>
                         </div>
-                        
+
                         <div class="form-group">
                             <textarea id="message" name="message" rows="5" required></textarea>
                             <label for="message">Your Message</label>
                         </div>
-                        
+
                         <button type="submit" class="btn btn-primary submit-btn">
                             <span>Send Message</span>
                             <i class="fas fa-paper-plane"></i>
@@ -884,13 +954,6 @@
     </button>
 
     <script src="script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 800,
-            once: true,
-            offset: 100
-        });
-    </script>
 </body>
+
 </html>
